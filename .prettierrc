@@ -1,0 +1,27 @@
+{
+	"semi": false,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"useTabs": true,
+	"tabWidth": 2,
+	"printWidth": 80,
+	"jsxSingleQuote": true,
+	"importOrder": [
+		"^(react/(.*)$)|^(react$)",
+		"<THIRD_PARTY_MODULES>",
+		"",
+		"^@pages/(.*)$",
+		"",
+		"^@components/(.*)$",
+		"",
+		"^@models/(.*)$",
+		"",
+		"^@content/(.*)$",
+		"",
+		"^[~/]",
+		"^[../]",
+		"^[./]"
+	],
+	"importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+	"plugins": ["@ianvs/prettier-plugin-sort-imports"]
+}
