@@ -1,0 +1,14 @@
+.videos-container {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	animation: scroll-down 2s infinite;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	scroll-snap-align: start;
+}

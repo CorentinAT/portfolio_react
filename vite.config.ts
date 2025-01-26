@@ -9,7 +9,8 @@ export default defineConfig({
 			'@pages': '/src/pages',
 			'@models': '/src/models',
 			'@components': '/src/components',
-			'@content': '/src/content'
+			'@content': '/src/content',
+			'@styles': '/src/styles'
 		}
 	}
 })
