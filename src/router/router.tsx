@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import DevPage from '@pages/devPage'
+import DevPage from '@pages/DevPage'
 import HomePage from '@pages/HomePage'
 import VideosPage from '@pages/VideosPage'
 
