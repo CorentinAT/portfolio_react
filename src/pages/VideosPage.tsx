@@ -1,24 +1,20 @@
 import '@styles/videosPage.css'
 
+import VideoSection from '@components/videos/videoSection/VideoSection'
+import VideosHome from '@components/videos/videosHome/VideosHome'
+
 import { VideoModel } from '@models/videoModel'
 
-import videos from '@content/videos.json'
+import { videos } from '@content/videos'
 
 export default function VideosPage() {
 	const videosSections = (videos as VideoModel[]).map((video, index) => (
-		<section
-			key={index}
-			className='video'
-			style={{ backgroundColor: video.color }}
-		>
-			<p>{video.name}</p>
-			<p>{video.description}</p>
-		</section>
+		<VideoSection key={index} video={video} />
 	))
 
 	return (
 		<div className='videos-container'>
-			<section key='initial'>accueil</section>
+			<VideosHome />
 			{videosSections}
 		</div>
 	)

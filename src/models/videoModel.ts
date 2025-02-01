@@ -1,5 +1,5 @@
 export interface VideoModel {
-	name: string
+	title: string
 	description: string
 	color: string
 }

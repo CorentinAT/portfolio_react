@@ -1,0 +1,31 @@
+.container {
+	position: relative;
+}
+
+.container h1 {
+	margin: 0 auto 0 auto;
+}
+
+.arrows {
+	position: absolute;
+	bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.arrow {
+	animation: arrow 1.5s infinite;
+}
+
+@keyframes arrow {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
