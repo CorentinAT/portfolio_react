@@ -46,13 +46,13 @@ export default function HomePage() {
 			<img className={`dev-image ${devImageVisibility}`} src={dev} />
 			<div className='external-links'>
 				<a href='https://github.com/corentinat' target='_blank'>
-					<GitHubIcon titleAccess='github' />
+					<GitHubIcon titleAccess='github' sx={{ fontSize: '35px' }} />
 				</a>
 				<a
 					href='https://www.linkedin.com/in/corentin-albert-75a939251'
 					target='_blank'
 				>
-					<LinkedInIcon titleAccess='linkedin' />
+					<LinkedInIcon titleAccess='linkedin' sx={{ fontSize: '40px' }} />
 				</a>
 			</div>
 		</div>

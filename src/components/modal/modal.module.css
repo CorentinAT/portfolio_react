@@ -5,6 +5,7 @@
 	background-color: black;
 	opacity: 0.4;
 	z-index: 20;
+	animation: animate-backdrop 0.2s ease-out backwards;
 }
 
 .modal {
@@ -26,9 +27,27 @@
 	box-shadow:
 		0 10px 15px -3px rgba(0, 0, 0, 0.1),
 		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	animation: animate-content 0.2s backwards;
 }
 
-/* Media query pour la version desktop */
+@keyframes animate-backdrop {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes animate-content {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 @media (min-width: 768px) {
 	.modal {
 		width: 41.6667%;
