@@ -4,7 +4,8 @@
 
 .container h1 {
 	margin: 0 auto 0 auto;
-	color: red;
+	font-size: 20rem;
+	font-style: italic;
 }
 
 .arrows {

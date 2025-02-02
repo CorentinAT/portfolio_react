@@ -16,7 +16,7 @@ export default function InfoBubble(props: Props) {
 	const chars = props.text.split('')
 	console.log(chars)
 	const delay = 20
-	const initialDelay = 600
+	const initialDelay = 200
 	const lettersList = chars.map((char, index) => {
 		if (char === '>') {
 			return <br />
