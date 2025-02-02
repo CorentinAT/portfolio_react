@@ -1,0 +1,16 @@
+.navbar {
+	position: absolute;
+	display: flex;
+	gap: 20px;
+	margin: 20px;
+	z-index: 999;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar a.active {
+	text-decoration: underline;
+}

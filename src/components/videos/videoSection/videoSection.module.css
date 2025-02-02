@@ -1,4 +1,5 @@
 .video-section {
+	position: relative;
 	height: 100vh;
 	display: flex;
 	justify-content: space-between;
@@ -30,6 +31,19 @@
 
 .video-infos:not(.animate-appears) {
 	opacity: 0;
+}
+
+.pagination {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	margin: 0;
+}
+
+.video-details {
+	text-decoration: underline;
+	margin-top: 10px;
+	cursor: pointer;
 }
 
 @keyframes appears {

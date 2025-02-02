@@ -6,9 +6,11 @@ import classes from './videoSection.module.css'
 
 interface Props {
 	video: VideoModel
+	index: number
+	total: number
 }
 
-export default function VideoSection({ video }: Props) {
+export default function VideoSection(props: Props) {
 	const infosRef = useRef<HTMLDivElement>(null)
 	const [isVisible, setIsVisible] = useState(false)
 
@@ -36,22 +38,26 @@ export default function VideoSection({ video }: Props) {
 	return (
 		<section
 			className={classes['video-section']}
-			style={{ backgroundColor: video.color }}
+			style={{ background: props.video.background }}
 		>
+			<p className={classes.pagination}>
+				{props.index + 1}/{props.total}
+			</p>
 			<div
 				ref={infosRef}
 				className={`${classes['video-infos']} ${
 					isVisible ? classes['animate-appears'] : ''
 				}`}
 			>
-				<h2>{video.title}</h2>
-				<p>{video.description}</p>
+				<h2 className='semibold'>{props.video.title}</h2>
+				<p>{props.video.description}</p>
+				<p className={classes['video-details']}>En savoir plus</p>
 			</div>
 			<iframe
 				className={classes['video-frame']}
 				width='960'
 				height='540'
-				src='http://www.youtube.com/embed/goDoggW5hxE?enablejsapi=1&origin=http://example.com'
+				src={`http://www.youtube.com/embed/${props.video.url}?enablejsapi=1&start=${props.video.start}`}
 			></iframe>
 		</section>
 	)

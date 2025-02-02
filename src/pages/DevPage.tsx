@@ -1,5 +1,12 @@
+import NavBar from '@components/NavBar'
+
 import '@styles/devPage.css'
 
 export default function DevPage() {
-	return <h1>Dev</h1>
+	return (
+		<>
+			<NavBar />
+			<h1>Dev</h1>
+		</>
+	)
 }

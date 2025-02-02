@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+* {
+	font-family: 'Atma', serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 body {
 	margin: 0;
+}
+
+.light {
+	font-weight: 300;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.semibold {
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 700;
 }

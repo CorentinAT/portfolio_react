@@ -1,13 +1,13 @@
-section {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	scroll-snap-align: start;
-}
-
 .videos-container {
 	height: 100vh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 	animation: scroll-down 2s infinite;
+}
+
+.videos-container section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	scroll-snap-align: start;
 }

@@ -1,5 +1,7 @@
 export interface VideoModel {
 	title: string
 	description: string
-	color: string
+	url: string
+	background: string
+	start?: number
 }
