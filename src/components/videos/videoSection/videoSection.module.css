@@ -7,6 +7,21 @@
 	padding: 0 50px 0 50px;
 }
 
+.animate {
+	animation: bounce-up 3s infinite ease-in-out;
+}
+
+@keyframes bounce-up {
+	0%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-50px);
+	}
+}
+
 .video-section:nth-child(2n + 1) {
 	flex-direction: row-reverse;
 }

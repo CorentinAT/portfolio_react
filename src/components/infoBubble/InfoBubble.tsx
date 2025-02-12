@@ -15,7 +15,7 @@ export default function InfoBubble(props: Props) {
 
 	const chars = props.text.split('')
 	console.log(chars)
-	const delay = 20
+	const delay = 15
 	const initialDelay = 200
 	const lettersList = chars.map((char, index) => {
 		if (char === '>') {
@@ -46,9 +46,7 @@ export default function InfoBubble(props: Props) {
 			</div>
 			{!displayText ? (
 				<div className={classes['typing-indicator']}>
-					<div className={classes.dot}></div>
-					<div className={classes.dot}></div>
-					<div className={classes.dot}></div>
+					<div className={`${classes.mark} bold`}>!</div>
 				</div>
 			) : (
 				<div className={classes['text-container']}>{lettersList}</div>

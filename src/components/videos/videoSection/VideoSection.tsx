@@ -16,6 +16,7 @@ export default function VideoSection(props: Props) {
 
 	const [isVisible, setIsVisible] = useState(false)
 	const [showDetails, setShowDetails] = useState(false)
+	const [animate, setAnimate] = useState(props.index === 0)
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -24,8 +25,10 @@ export default function VideoSection(props: Props) {
 					setShowDetails(false)
 					if (entry.isIntersecting) {
 						setIsVisible(true)
+						setAnimate(false)
 					} else {
 						setIsVisible(false)
+						setAnimate(props.index === 0)
 					}
 				})
 			},
@@ -37,7 +40,7 @@ export default function VideoSection(props: Props) {
 		}
 
 		return () => observer.disconnect()
-	}, [])
+	}, [props.index])
 
 	return (
 		<>
@@ -48,7 +51,7 @@ export default function VideoSection(props: Props) {
 				/>
 			)}
 			<section
-				className={classes['video-section']}
+				className={`${classes['video-section']} ${animate ? classes.animate : ''}`}
 				style={{ background: props.video.background }}
 			>
 				<p className={classes.pagination}>

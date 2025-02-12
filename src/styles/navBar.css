@@ -9,8 +9,9 @@
 .navbar a {
 	text-decoration: none;
 	color: black;
+	transition: transform 0.2s;
 }
 
-.navbar a.active {
-	text-decoration: underline;
+.navbar a:hover {
+	transform: scale(1.2);
 }

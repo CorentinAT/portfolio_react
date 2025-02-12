@@ -1,4 +1,4 @@
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp'
 
 import InfoBubble from '@components/infoBubble/InfoBubble'
 
@@ -10,16 +10,10 @@ export default function VideosHome() {
 	return (
 		<section className={classes.container}>
 			<h1 className='semibold'>VIDEOS</h1>
-			<InfoBubble text={infos.videos} left='400px' top='300px' />
+			<InfoBubble text={infos.videos} left='400px' top='250px' />
 			<div className={classes.arrows}>
-				<ArrowDropDownIcon
-					className={classes.arrow}
-					sx={{ fontSize: '80px' }}
-				/>
-				<ArrowDropDownIcon
-					className={classes.arrow}
-					sx={{ fontSize: '80px' }}
-				/>
+				<ArrowDropUpIcon className={classes.arrow} sx={{ fontSize: '80px' }} />
+				<ArrowDropUpIcon className={classes.arrow} sx={{ fontSize: '80px' }} />
 			</div>
 		</section>
 	)

@@ -12,6 +12,16 @@ export const videos: VideoModel[] = [
 		date: 'Octobre 2023'
 	},
 	{
+		title: 'Clip Ange VS Démons',
+		description:
+			"Montage du clip d'un morceau rap d'une liste d'un BDE de l'Ensimag, une école d'ingénieur à Grenoble. J'ai un ami de cette école qui y participe qui m'a appelé pour faire le montage. C'était la première fois que je montais un clip et j'en suis bien content.",
+		url: 'ZInHeAjIew4',
+		background:
+			'linear-gradient(225deg, rgba(255,69,69,1) 0%, rgba(150,0,0,1) 100%)',
+		software: SoftwareEnum.DAVINCI,
+		date: 'Février 2025'
+	},
+	{
 		title: 'Zoocar',
 		description:
 			"Vidéo de présentation de notre site Zoocar, imaginé et créé pour un projet de cours. Nous devions faire une vidéo pour présenter le site. Nous avons choisi de poser un contexte et d'ajouter des plans filmés en plus des images du site.",
