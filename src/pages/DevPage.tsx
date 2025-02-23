@@ -6,7 +6,9 @@ export default function DevPage() {
 	return (
 		<>
 			<NavBar />
-			<h1>Dev</h1>
+			<div className='dev-container'>
+				<h1>Informatique</h1>
+			</div>
 		</>
 	)
 }
