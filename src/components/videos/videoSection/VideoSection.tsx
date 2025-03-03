@@ -24,8 +24,14 @@ export default function VideoSection(props: Props) {
 						setIsVisible(true)
 						setAnimate(false)
 					} else {
-						setIsVisible(false)
-						setAnimate(props.index === 0)
+						setTimeout(() => {
+							setIsVisible(false)
+							if (entry.isIntersecting && props.index === 0) {
+								setAnimate(true)
+							} else {
+								setAnimate(false)
+							}
+						}, 500)
 					}
 				})
 			},
@@ -41,7 +47,7 @@ export default function VideoSection(props: Props) {
 
 	return (
 		<section
-			className={`${classes['video-section']} ${animate ? classes.animate : ''}`}
+			className={`${classes['video-section']} ${animate ? classes['animate-bounce'] : ''}`}
 			style={{ background: props.video.background }}
 		>
 			<p className={classes.pagination}>

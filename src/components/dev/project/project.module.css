@@ -1,0 +1,15 @@
+.project {
+	border-radius: 8px;
+	border: solid;
+	border-width: 1px;
+	border-color: lightgray;
+}
+
+.project h2 {
+	width: fit-content;
+	cursor: pointer;
+}
+
+.project h2:hover {
+	text-decoration: underline;
+}

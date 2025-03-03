@@ -1,0 +1,63 @@
+.close {
+	cursor: pointer;
+}
+
+.dialog {
+	border: none;
+	width: 50vw;
+	border-radius: 8px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.header .title {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.header .title h3 {
+	margin: 0;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.header .title p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.image-container img {
+	max-width: 100%;
+	border: solid 1px black;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .tools,
+.footer .access {
+	display: flex;
+	gap: 8px;
+}
+
+.footer .tools .tool {
+	border-radius: 8px;
+	background-color: rgb(238, 238, 238);
+	padding: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

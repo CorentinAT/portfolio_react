@@ -7,7 +7,7 @@
 	padding: 0 50px 0 50px;
 }
 
-.animate {
+.animate-bounce {
 	animation: bounce-up 3s infinite ease-in-out;
 }
 
@@ -41,8 +41,12 @@
 	filter: drop-shadow(30px 30px 0px black);
 }
 
-.animate-appears {
-	animation: appear-right 1s;
+.video-section:nth-child(2n + 1) .animate-appears {
+	animation: appears-left 1s;
+}
+
+.video-section:nth-child(2n) .animate-appears {
+	animation: appears-right 1s;
 }
 
 .video-infos:not(.animate-appears) {
@@ -64,16 +68,6 @@
 	text-decoration: underline;
 	margin-top: 10px;
 	cursor: pointer;
-}
-
-@keyframes appears {
-	0% {
-		opacity: 1;
-		transform: scale(0);
-	}
-	100% {
-		transform: scale(1);
-	}
 }
 
 @keyframes appears-right {
