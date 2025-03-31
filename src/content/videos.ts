@@ -63,7 +63,7 @@ export const videos: VideoModel[] = [
 		date: 'Décembre 2022'
 	},
 	{
-		title: 'Enligh Profile',
+		title: 'English Profile',
 		description:
 			"Présentation de moi-même en anglais, en suivant une structure vue en cours. J'ai ajouté quelques effets/transitions que je voulais tester.",
 		url: 'lp1LmDzMQHk',
