@@ -74,7 +74,7 @@ export default function VideoSection(props: Props) {
 				width='960'
 				height='540'
 				allowFullScreen
-				src={`https://www.youtube.com/embed/${props.video.url}?enablejsapi=1&start=${props.video.start}`}
+				src={`https://www.youtube-nocookie.com/embed/${props.video.url}?enablejsapi=1&start=${props.video.start}`}
 			></iframe>
 		</section>
 	)

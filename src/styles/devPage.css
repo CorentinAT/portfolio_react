@@ -1,2 +1,11 @@
 .dev-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dev-container p {
+	font-size: 60px;
 }

@@ -3,9 +3,8 @@
 }
 
 .container h1 {
-	margin: 0 auto 0 auto;
-	font-size: 20rem;
-	font-style: italic;
+	font-size: clamp(8rem, 20vw, 60rem);
+	margin: 0 auto;
 }
 
 .arrows {
